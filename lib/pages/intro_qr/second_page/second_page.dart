@@ -1,8 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:inha_task/pages/intro_pages/views/background_image.dart';
-import 'package:inha_task/pages/intro_pages/views/text_widget.dart';
+import 'package:inha_task/pages/intro_qr/views/background_image.dart';
+import 'package:inha_task/pages/intro_qr/views/text_widget.dart';
 
 class SecondPage extends StatefulWidget {
   const SecondPage({Key? key}) : super(key: key);
@@ -23,11 +23,11 @@ class _SecondPageState extends State<SecondPage> {
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: const [
-              BackgroundImage(image: "assets/images/second_im.png"),
+              BackgroundImage(image: "assets/images/second_qr_im.png"),
               TextWidget(
-                  title: "Откройте для себя множество партнерских магазинов с товарами именно для вас",
+                  title: "Моментальное начисление ",
                   subTitle:
-                  "Находите магазины по категориям, локациям и вдохновляйтесь на новые покупки!",),
+                  "Оплачивайте через QR-Code и зарабатывайте кеш-беки постоянно 24/7",),
             ],
           ),
         ),

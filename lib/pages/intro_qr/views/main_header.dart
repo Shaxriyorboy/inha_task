@@ -8,11 +8,11 @@ class MainHeader extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context,WidgetRef ref) {
-    ref.watch(mainNotifier.select((value) => value.pageIndex));
+    ref.watch(mainQrNotifier.select((value) => value.pageIndex));
     return Row(
       children: [
         const Spacer(),
-        ref.read(mainNotifier).pageIndex!=3?TextButton(
+        ref.read(mainQrNotifier).pageIndex!=2?TextButton(
             style: ButtonStyle(
               padding: MaterialStateProperty.all(const EdgeInsets.all(0)),
               side: MaterialStateProperty.all(BorderSide.none),

@@ -1,8 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:inha_task/pages/intro_pages/views/background_image.dart';
-import 'package:inha_task/pages/intro_pages/views/text_widget.dart';
+import 'package:inha_task/pages/intro_qr/views/background_image.dart';
+import 'package:inha_task/pages/intro_qr/views/text_widget.dart';
 
 class ThirdPage extends StatefulWidget {
   const ThirdPage({Key? key}) : super(key: key);
@@ -23,11 +23,11 @@ class _ThirdPageState extends State<ThirdPage> {
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: const [
-              BackgroundImage(image: "assets/images/third_im.png"),
+              BackgroundImage(image: "assets/images/third_qr_im.png"),
               TextWidget(
-                  title: "Наслаждайтесь  вашей покупкой с приятными бонусами от ZPAY",
+                  title: "Заработай свой первый кешбек",
                   subTitle:
-                  "Совершайте покупки у наших партнеров и с приятным кешбеком от ZPAY",),
+                  "Просматривайте свои прошлые и текущие договора, и платежи. Управляйте своими данными в едином приложении",),
             ],
           ),
         ),

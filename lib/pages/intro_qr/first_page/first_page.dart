@@ -1,8 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:inha_task/pages/intro_pages/views/background_image.dart';
-import 'package:inha_task/pages/intro_pages/views/text_widget.dart';
+import 'package:inha_task/pages/intro_qr/views/background_image.dart';
+import 'package:inha_task/pages/intro_qr/views/text_widget.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({Key? key}) : super(key: key);
@@ -23,11 +23,11 @@ class _FirstPageState extends State<FirstPage> {
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: const [
-              BackgroundImage(image: "assets/images/first_im.png"),
+              BackgroundImage(image: "assets/images/first_qr_im.png"),
               TextWidget(
-                  title: "Приобретайте в рассрочку с ZPAY менее чем за 2 минуты",
+                  title: "Добавление карты",
                   subTitle:
-                  "Покупайте сейчас и платите равными частями в срок до 6 месяцев! Пройдите быструю регистрацию, имея только Паспорт и платежную карту ",),
+                  "Для начала начисления Кешбека вам необходимо добавить в нашу платежную систему ваши карты еще раз.",),
             ],
           ),
         ),

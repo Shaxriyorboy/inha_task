@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:inha_task/pages/intro_pages/views/main_body.dart';
-import 'package:inha_task/pages/intro_pages/views/main_footer.dart';
+import 'package:inha_task/pages/intro_qr/views/main_body.dart';
+import 'package:inha_task/pages/intro_qr/views/main_footer.dart';
 import 'main_vm.dart';
 
-final mainNotifier = ChangeNotifierProvider((ref) => MainVM());
+final mainQrNotifier = ChangeNotifierProvider((ref) => MainVM());
 
-class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
+class MainQrPage extends StatelessWidget {
+  const MainQrPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

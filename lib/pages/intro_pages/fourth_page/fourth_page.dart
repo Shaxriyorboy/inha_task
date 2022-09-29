@@ -4,14 +4,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:inha_task/pages/intro_pages/views/background_image.dart';
 import 'package:inha_task/pages/intro_pages/views/text_widget.dart';
 
-class FourthPage extends StatefulWidget {
+class FourthPage extends StatelessWidget {
   const FourthPage({Key? key}) : super(key: key);
 
-  @override
-  State<FourthPage> createState() => _FourthPageState();
-}
-
-class _FourthPageState extends State<FourthPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +14,7 @@ class _FourthPageState extends State<FourthPage> {
       body: BounceInDown(
         duration: const Duration(seconds: 1),
         child: Padding(
-          padding: EdgeInsets.only(top: 10.h),
+          padding: EdgeInsets.only(top: 130.h),
           child: Stack(
             alignment: Alignment.bottomCenter,
             children: const [

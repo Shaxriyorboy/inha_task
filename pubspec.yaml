@@ -12,10 +12,13 @@ dependencies:
   flutter:
     sdk: flutter
 
-  get: ^4.6.5
+  flutter_riverpod: ^1.0.4
   flutter_screenutil: ^5.5.4
   smooth_page_indicator: ^1.0.0+2
   animate_do: ^2.1.0
+  flutter_secure_storage: ^6.0.0
+  local_auth: ^2.1.2
+  credit_card_scanner: ^1.0.5
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

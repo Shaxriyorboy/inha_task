@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "540028654980",
+    "project_id": "scanner-card",
+    "storage_bucket": "scanner-card.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540028654980:android:d3ed87358ea18e6db279d1",
+        "android_client_info": {
+          "package_name": "com.example.inha_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540028654980-2lkknou89fhbl6v2ptcrqit6n9gind2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMc98kiswHpz39qY8c2ZPrfexja7yqTzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540028654980-2lkknou89fhbl6v2ptcrqit6n9gind2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

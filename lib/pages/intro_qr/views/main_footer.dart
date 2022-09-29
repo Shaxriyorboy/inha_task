@@ -11,7 +11,7 @@ class MainFooter extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ref.watch(mainNotifier.select((value) => value.pageIndex));
+    ref.watch(mainQrNotifier.select((value) => value.pageIndex));
     return Padding(
       padding: EdgeInsets.only(left: 24.w, right: 24.w, top: 45.h),
       child: Column(
@@ -22,7 +22,7 @@ class MainFooter extends ConsumerWidget {
             height: 60.h,
             width: 1.sw,
             margin: EdgeInsets.only(top: 15.h, bottom: 28.h),
-            child: ref.read(mainNotifier).pageIndex != 3
+            child: ref.read(mainQrNotifier).pageIndex != 2
                 ? Row(
                     children: const [
                       CustomIndicator(),
@@ -57,7 +57,7 @@ class CustomButton extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.r)),
       color: const Color(0xFF1D44CB),
       child: Text(
-        "Пройти регистрацию",
+        "Добавить карту",
         style: TextStyle(
           fontSize: 16.sp,
           fontWeight: FontWeight.w600,
@@ -75,7 +75,7 @@ class FloatButton extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return GestureDetector(
       onTap: () {
-        ref.read(mainNotifier).moveToNextPage();
+        ref.read(mainQrNotifier).moveToNextPage();
       },
       child: Container(
         height: 60.h,
@@ -98,10 +98,10 @@ class CustomIndicator extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return SmoothPageIndicator(
-      controller: ref.read(mainNotifier).pageController,
-      count: 4,
+      controller: ref.read(mainQrNotifier).pageController,
+      count: 3,
       effect: ExpandingDotsEffect(
-          expansionFactor: 4,
+        expansionFactor: 4,
           activeDotColor: Colors.blue.shade800,
           dotColor: Colors.grey.shade400,
           dotHeight: 6.h,

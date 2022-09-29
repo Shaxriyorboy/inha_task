@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:inha_task/pages/intro_pages/main_page/main_page.dart';
-import 'package:inha_task/services/di_service.dart';
+import 'package:inha_task/pages/card_scanner_page/card_scanner_page.dart';
+import 'package:inha_task/pages/create_pincode_page/create_pin_code_page.dart';
 
-void main() {
-  runApp(const MyApp());
+void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,15 +19,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 762),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (BuildContext context, Widget? child) => GetMaterialApp(
+      builder: (BuildContext context, Widget? child) => MaterialApp(
         title: 'Introduction',
         theme: ThemeData(fontFamily: "Mont"),
         debugShowCheckedModeBanner: false,
-        initialBinding: DIService(),
-        home: const MainPage(),
+        home: const CardScannerPage(),
       ),
     );
   }
